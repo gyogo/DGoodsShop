@@ -39,7 +39,7 @@ class Cart:
         if product.id not in self.cart:
             self.cart[product.id] = {'quantity':0,'price':str(product.price)}
         if is_update:
-            self.cart[product.id]['quantitu'] = quantity
+            self.cart[product.id]['quantity'] = quantity
         else:
             self.cart[product.id]['quantity'] += quantity
 
