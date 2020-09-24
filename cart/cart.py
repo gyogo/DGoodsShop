@@ -47,6 +47,7 @@ class Cart:
         self.save()
 
     def remove(self, product): #cart에 product 삭제하자
+        product.id = str(product.id)
         if product.id in self.cart:
             del self.cart[product.id]
             self.save()
